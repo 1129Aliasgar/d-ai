@@ -1,0 +1,173 @@
+.page_bottomSpacer__vts_l {
+    height: 18rem
+}
+
+@media(max-width:767.98px) {
+    .page_bottomSpacer__vts_l {
+        height: 3rem
+    }
+}
+
+.page_slogan__T_fkj {
+    color: #b7b9ba;
+    text-wrap: balance
+}
+
+
+.blog-teaser_blogTeaser__iN_2M {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.blog-teaser_blogTeaser__iN_2M .blog-teaser_img__xBa_M:hover img {
+    transform: scale(1.05)
+}
+
+.blog-teaser_content__FFQX2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+.teaser-img-fix{
+    margin-top: 63px;
+}
+
+.blog-teaser_heading__KWHU_ {
+    color: #9fa1a3;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem
+}
+
+.blog-teaser_heading__KWHU_ h4 {
+    flex-grow: 1;
+    font-size: 1rem;
+    letter-spacing: 0 !important;
+    font-weight: 500;
+    margin: 0
+}
+
+.blog-teaser_heading__KWHU_:hover svg {
+    color: #fff
+}
+
+.blog-teaser_readMore__x1pdu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end
+}
+
+.blog-teaser_text__jbhwi {
+    color: #ccc;
+    font-size: .9rem;
+    flex-grow: 1
+}
+
+.blog-teaser_img__xBa_M {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: .5rem
+}
+
+.blog-teaser_img__xBa_M img {
+    transition: transform .25s linear
+}
+
+.blog-teaser_timestamp__hb6gF {
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    font-size: .75rem;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    border: 1px solid hsla(0, 0%, 100%, .05);
+    padding: .1rem .5rem
+}
+
+.blog-teaser_timestamp__hb6gF p {
+    margin: 0;
+    color: #ccc
+}
+
+
+.careers-teaser_loader__X05HV {
+    background: #0f1518;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px
+}
+
+.careers-teaser_loader__X05HV:after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 1;
+    animation: careers-teaser_slide__y8MMs 1s infinite;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0));
+    opacity: .1
+}
+
+.careers-teaser_link__XGSYV {
+    display: flex;
+    color: #e7e8e8;
+    align-items: center;
+    gap: 3rem
+}
+
+.careers-teaser_link__XGSYV:hover {
+    text-decoration: none
+}
+
+.careers-teaser_link__XGSYV h2 {
+    font-weight: 300
+}
+
+.careers-teaser_link__XGSYV h2,
+.careers-teaser_link__XGSYV strong {
+    flex: 1;
+    margin: 0
+}
+
+.careers-teaser_link__XGSYV .careers-teaser_condensed__jbiIo {
+    flex: 1
+}
+
+.careers-teaser_link__XGSYV p {
+    margin: 0;
+    color: #6f7374
+}
+
+.careers-teaser_careers__zZ6KP {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
+}
+
+.careers-teaser_careers__zZ6KP li {
+    margin: 0;
+    padding: 0
+}
+
+@keyframes careers-teaser_slide__y8MMs {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}

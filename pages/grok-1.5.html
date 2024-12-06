@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="../css/543ab43b93f391f3.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/91ed683cfcd9c678.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/4175d06420ee6961.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/b21c9042fc57e045.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/460bb1e155ea8b2b.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/6bcbf955d3463977.css" data-precedence="next" />
+      <title>Announcing Grok-1.5</title>
+      <meta name="description"
+            content="Grok-1.5 comes with improved reasoning capabilities and a context length of 128,000 tokens. Available on 𝕏 soon." />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Announcing Grok-1.5" />
+      <meta name="twitter:description"
+            content="Grok-1.5 comes with improved reasoning capabilities and a context length of 128,000 tokens. Available on 𝕏 soon." />
+      <meta name="twitter:image:type" content="image/png" />
+      <meta name="twitter:image:width" content="1911" />
+      <meta name="twitter:image:height" content="1000" />
+      <meta name="twitter:image" content="https://x.ai/blog/grok-1.5/twitter-image-1kiq9h.png?a6fd0a9f79126aa9" />
+      <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32" />
+      <link rel="icon" href="../images/icon.svg?2f55916d3a05ba17" type="image/svg+xml" sizes="any" />
+      <link rel="apple-touch-icon" href="../images/apple-icon.png?d82460d2a9afe67b" type="image/png" sizes="180x180" />
+      <meta name="next-size-adjust" />
+</head>
+
+<body>
+      <div class="site-header_placeholder__KcA86 "></div>
+      <header class="site-header_header__PTnp0 ">
+            <div class="xai-container">
+                  <div class="site-header_foreground__etqdK">
+                        <div class="site-header_logo__QGAGJ"><a class="site-header_logoLink__9rqP5" href="#"><svg
+                                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="32"
+                                          height="32">
+                                          <g>
+                                                <polygon fill="#fff"
+                                                      points="226.83 411.15 501.31 803.15 623.31 803.15 348.82 411.15 226.83 411.15">
+                                                </polygon>
+                                                <polygon fill="#fff"
+                                                      points="348.72 628.87 226.69 803.15 348.77 803.15 409.76 716.05 348.72 628.87">
+                                                </polygon>
+                                                <polygon fill="#fff"
+                                                      points="651.23 196.85 440.28 498.12 501.32 585.29 773.31 196.85 651.23 196.85">
+                                                </polygon>
+                                                <polygon fill="#fff"
+                                                      points="673.31 383.25 673.31 803.15 773.31 803.15 773.31 240.44 673.31 383.25">
+                                                </polygon>
+                                          </g>
+                                    </svg></a></div>
+                        <nav class="site-header_mainNav__M1I3L d-none d-sm-flex"><a class="
+         " href="../api.html">API</a><a class="
+        site-header_active___LqO0 " href="blog.html">Blog</a><a class="
+         " href="about.html">About</a><a class="
+         " href="careers.html">Careers</a></nav>
+                        <section class="site-header_integrations__Za5ws d-none d-sm-flex"><button type="button" class="button_grokButton__ycCq8
+                
+                button_default__B1BSZ button_signin__4B43l
+                
+          "><span class="button_content__etEHN">Sign in</span></button></section>
+                        <div class="d-block d-sm-none">
+                              <section class="site-header_integrations__Za5ws"><button
+                                          class="site-header_menuBtn__iQKk8">Menu</button><button type="button" class="button_grokButton__ycCq8
+                
+                button_default__B1BSZ button_signin__4B43l
+                
+          "><span class="button_content__etEHN">Sign in</span></button></section>
+                        </div>
+                  </div>
+            </div>
+      </header>
+      <div class="gradient_gradient__QVNR2 " style="top:0px"></div>
+      <div class="xai-container">
+            <section class="hero_hero__PJjhY">
+                  <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col order-last order-sm-first"><img
+                                    alt="A stylized version of the Grok logo over a black and blue background"
+                                    loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
+                                    style="color:transparent"
+                                    srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgrok-1.5.d7b424a6.webp&w=1080&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgrok-1.5.d7b424a6.webp&w=2048&q=75 2x"
+                                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgrok-1.5.d7b424a6.webp&w=2048&q=75" />
+                        </div>
+                        <div class="col hero_text__u2ygw order-first order-sm-last">
+                              <div class="hero_arrowContainer__nFI20 " style="justify-content:start"><a
+                                          style="rotate:-180deg" href="blog.html"><span class="xai-arrow">
+                                                <style data-emotion="css vubbuv">
+                                                      .css-vubbuv {
+                                                            -webkit-user-select: none;
+                                                            -moz-user-select: none;
+                                                            -ms-user-select: none;
+                                                            user-select: none;
+                                                            width: 1em;
+                                                            height: 1em;
+                                                            display: inline-block;
+                                                            fill: currentColor;
+                                                            -webkit-flex-shrink: 0;
+                                                            -ms-flex-negative: 0;
+                                                            flex-shrink: 0;
+                                                            -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                            font-size: 1.5rem;
+                                                      }
+                                                </style><svg
+                                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                                      focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                      data-testid="ArrowForwardIcon">
+                                                      <path
+                                                            d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                                                      </path>
+                                                </svg>
+                                          </span></a></div>
+                              <div class="">
+                                    <p class="hero_timestamp__NLcXL">March 28, 2024</p>
+                                    <h1>Announcing Grok-1.5</h1>
+                                    <p>Grok-1.5 comes with improved reasoning capabilities and a context length of
+                                          128,000 tokens. Available on 𝕏 soon.</p>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+      </div>
+      <div class="pb-4 pt-4 content-box_wrapper___f519 content-box_transparent__mGBKd">
+            <div class="xai-container">
+                  <main class="content-box_prose__Xukvg">
+                        <div class="row">
+                              <div class="col-xxl-6 offset-xxl-3 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col">
+                                    <p><strong>Introducing Grok-1.5, our latest model capable of long context
+                                                understanding and advanced reasoning. Grok-1.5 will be available to our
+                                                early testers and existing Grok users on the 𝕏 platform in the coming
+                                                days.</strong></p>
+                                    <p>By releasing the model weights and network architecture of Grok-1 two weeks ago,
+                                          we presented a glimpse into the progress xAI had made up until last November.
+                                          Since then, we have improved reasoning and problem-solving capabilities in our
+                                          latest model, Grok-1.5.</p>
+                                    <h2 id="capabilities-and-reasoning">Capabilities and Reasoning</h2>
+                                    <p>One of the most notable improvements in Grok-1.5 is its performance in coding and
+                                          math-related tasks. In our tests, Grok-1.5 achieved a 50.6% score on the MATH
+                                          benchmark and a 90% score on the GSM8K benchmark, two math benchmarks covering
+                                          a wide range of grade school to high school competition problems.
+                                          Additionally, it scored 74.1% on the HumanEval benchmark, which evaluates code
+                                          generation and problem-solving abilities.</p>
+                              </div>
+                        </div>
+                        <div class="mt-4 mb-4">
+                              <div class="row">
+                                    <div class="col-xxl-8 offset-xxl-2 col-xl-10 offset-xl-1 col-lg-12 col">
+                                          <div class="tableWrapper">
+                                                <table class="table right">
+                                                      <thead>
+                                                            <tr>
+                                                                  <th>Benchmark</th>
+                                                                  <th>Grok-1</th>
+                                                                  <th class="grok"><strong>Grok-1.5</strong></th>
+                                                                  <th>Mistral Large</th>
+                                                                  <th>Claude 2</th>
+                                                                  <th>Claude 3 Sonnet</th>
+                                                                  <th>Gemini Pro 1.5</th>
+                                                                  <th>GPT-4</th>
+                                                                  <th>Claude 3 Opus</th>
+                                                            </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                            <tr>
+                                                                  <th scope="row">MMLU</th>
+                                                                  <td>73%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td class="grok">81.3%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>81.2%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>75%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>79%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>83.7%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>86.4%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>86.8<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                            </tr>
+                                                            <tr>
+                                                                  <th scope="row">MATH</th>
+                                                                  <td>23.9%<br /><span
+                                                                              class="blog_info__l3mNs">4-shot</span>
+                                                                  </td>
+                                                                  <td class="grok">50.6%<br /><span
+                                                                              class="blog_info__l3mNs">4-shot</span>
+                                                                  </td>
+                                                                  <td>—<br /></td>
+                                                                  <td>—<br /></td>
+                                                                  <td>40.5%<br /><span
+                                                                              class="blog_info__l3mNs">4-shot</span>
+                                                                  </td>
+                                                                  <td>58.5%<br /><span
+                                                                              class="blog_info__l3mNs">4-shot</span>
+                                                                  </td>
+                                                                  <td>52.9%<br /><span
+                                                                              class="blog_info__l3mNs">4-shot</span>
+                                                                  </td>
+                                                                  <td>61%<br /><span
+                                                                              class="blog_info__l3mNs">4-shot</span>
+                                                                  </td>
+                                                            </tr>
+                                                            <tr>
+                                                                  <th scope="row">GSM8K</th>
+                                                                  <td>62.9<br /><span
+                                                                              class="blog_info__l3mNs">8-shot</span>
+                                                                  </td>
+                                                                  <td class="grok">90%<br /><span
+                                                                              class="blog_info__l3mNs">8-shot</span>
+                                                                  </td>
+                                                                  <td>81%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>88%<br /><span class="blog_info__l3mNs">0-shot
+                                                                              CoT</span></td>
+                                                                  <td>92.3%<br /><span class="blog_info__l3mNs">0-shot
+                                                                              CoT</span></td>
+                                                                  <td>91.7%<br /><span
+                                                                              class="blog_info__l3mNs">11-shot</span>
+                                                                  </td>
+                                                                  <td>92%<br /><span
+                                                                              class="blog_info__l3mNs">5-shot</span>
+                                                                  </td>
+                                                                  <td>95%<br /><span class="blog_info__l3mNs">0-shot
+                                                                              CoT</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                  <th scope="row">HumanEval</th>
+                                                                  <td>63.2%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td class="grok">74.1%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td>45.1%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td>70%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td>73%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td>71.9%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td>67%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                                  <td>84.9%<br /><span
+                                                                              class="blog_info__l3mNs">0-shot</span>
+                                                                  </td>
+                                                            </tr>
+                                                      </tbody>
+                                                </table>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-xxl-6 offset-xxl-3 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col">
+                                    <h2 id="long-context-understanding">Long Context Understanding</h2>
+                                    <p>A new feature in Grok-1.5 is the capability to process long contexts of up to
+                                          128K tokens within its context window. This allows Grok to have an increased
+                                          memory capacity of up to 16 times the previous context length, enabling it to
+                                          utilize information from substantially longer documents.</p>
+                                    <div><img alt="The image shows a graph that visualizes the model&#x27;s ability to recall information from its context window. The x-axis is the length of the context window and the y-axis is the relative position of the fact to retrieve from the window. We use colors to mark the recall rate. The entire graph is green, which means the recall-rate is 100% for every context window and every placement of the fact to retrieve."
+                                                loading="lazy" width="780" height="390" decoding="async" data-nimg="1"
+                                                class="mx-auto d-block img-fluid" style="color:transparent"
+                                                srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontext.f27d1f23.webp&w=828&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontext.f27d1f23.webp&w=1920&q=75 2x"
+                                                src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontext.f27d1f23.webp&w=1920&q=75" />
+                                    </div>
+                                    <p>Furthermore, the model can handle longer and more complex prompts, while still
+                                          maintaining its instruction-following capability as its context window
+                                          expands. In the Needle In A Haystack (NIAH) evaluation, Grok-1.5 demonstrated
+                                          powerful retrieval capabilities for embedded text within contexts of up to
+                                          128K tokens in length, achieving perfect retrieval results.</p>
+                                    <h2 id="grok-15-infra">Grok-1.5 Infra</h2>
+                                    <p>Cutting-edge Large Language Model (LLMs) research that runs on massive GPU
+                                          clusters demands robust and flexible infrastructure. Grok-1.5 is built on a
+                                          custom distributed training framework based on JAX, Rust, and Kubernetes. This
+                                          training stack enables our team to prototype ideas and train new architectures
+                                          at scale with minimal effort. A major challenge of training LLMs on large
+                                          compute clusters is maximizing reliability and uptime of the training job. Our
+                                          custom training orchestrator ensures that problematic nodes are automatically
+                                          detected and ejected from the training job. We also optimized checkpointing,
+                                          data loading, and training job restarts to minimize downtime in the event of a
+                                          failure. If working on our training stack sounds interesting to you, <a
+                                                href="https://x.ai/careers">apply to join the team</a>.</p>
+                                    <h2 id="looking-ahead">Looking Ahead</h2>
+                                    <p>Grok-1.5 will soon be available to early testers, and we look forward to
+                                          receiving your feedback to help us improve Grok. As we gradually roll out
+                                          Grok-1.5 to a wider audience, we are excited to introduce several new features
+                                          over the coming days.</p><small>
+                                          <p><em>Note that the GPT-4 scores are taken from the March 2023 release. For
+                                                      MATH and GSM8K, we present maj@1 results. For HumanEval, we report
+                                                      pass@1 benchmark scores.</em></p>
+                                    </small>
+                              </div>
+                        </div>
+                  </main>
+            </div>
+      </div>
+      <footer>
+            <div class="xai-container">
+                  <div class="site-footer_footer___c5T3">
+                        <div class="col-sm-auto"><a href="#">Developers</a></div>
+                        <div class="col-sm-auto"><a href="#">PromptIDE</a></div>
+                        <div class="col-sm-auto"><a href="legal.html">Legal</a></div>
+                  </div>
+            </div>
+      </footer>
+</body>
+
+</html>

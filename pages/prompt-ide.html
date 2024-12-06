@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="../css/543ab43b93f391f3.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/91ed683cfcd9c678.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/4175d06420ee6961.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/b21c9042fc57e045.css" data-precedence="next" />
+      <link rel="stylesheet" href="../css/6bcbf955d3463977.css" data-precedence="next" />
+      <title>Announcing PromptIDE</title>
+      <meta name="description"
+            content="Integrated development environment for prompt engineering and interpretability research." />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Announcing PromptIDE" />
+      <meta name="twitter:description"
+            content="Integrated development environment for prompt engineering and interpretability research." />
+      <meta name="twitter:image:type" content="image/png" />
+      <meta name="twitter:image:width" content="1911" />
+      <meta name="twitter:image:height" content="1000" />
+      <meta name="twitter:image" content="https://x.ai/blog/prompt-ide/twitter-image-1s9dgh.png?829068f891073bb7" />
+      <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="32x32" />
+      <link rel="icon" href="../images/icon.svg?2f55916d3a05ba17" type="image/svg+xml" sizes="any" />
+      <link rel="apple-touch-icon" href="../images/apple-icon.png?d82460d2a9afe67b" type="image/png" sizes="180x180" />
+      <meta name="next-size-adjust" />
+</head>
+
+<body>
+      <div class="site-header_placeholder__KcA86 "></div>
+      <header class="site-header_header__PTnp0 ">
+            <div class="xai-container">
+                  <div class="site-header_foreground__etqdK">
+                        <div class="site-header_logo__QGAGJ"><a class="site-header_logoLink__9rqP5" href="#"><svg
+                                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="32"
+                                          height="32">
+                                          <g>
+                                                <polygon fill="#fff"
+                                                      points="226.83 411.15 501.31 803.15 623.31 803.15 348.82 411.15 226.83 411.15">
+                                                </polygon>
+                                                <polygon fill="#fff"
+                                                      points="348.72 628.87 226.69 803.15 348.77 803.15 409.76 716.05 348.72 628.87">
+                                                </polygon>
+                                                <polygon fill="#fff"
+                                                      points="651.23 196.85 440.28 498.12 501.32 585.29 773.31 196.85 651.23 196.85">
+                                                </polygon>
+                                                <polygon fill="#fff"
+                                                      points="673.31 383.25 673.31 803.15 773.31 803.15 773.31 240.44 673.31 383.25">
+                                                </polygon>
+                                          </g>
+                                    </svg></a></div>
+                        <nav class="site-header_mainNav__M1I3L d-none d-sm-flex"><a class="
+         " href="../api.html">API</a><a class="
+        site-header_active___LqO0 " href="blog.html">Blog</a><a class="
+         " href="about.html">About</a><a class="
+         " href="careers.html">Careers</a></nav>
+                        <section class="site-header_integrations__Za5ws d-none d-sm-flex"><button type="button" class="button_grokButton__ycCq8
+                
+                button_default__B1BSZ button_signin__4B43l
+                
+          "><span class="button_content__etEHN">Sign in</span></button></section>
+                        <div class="d-block d-sm-none">
+                              <section class="site-header_integrations__Za5ws"><button
+                                          class="site-header_menuBtn__iQKk8">Menu</button><button type="button" class="button_grokButton__ycCq8
+                
+                button_default__B1BSZ button_signin__4B43l
+                
+          "><span class="button_content__etEHN">Sign in</span></button></section>
+                        </div>
+                  </div>
+            </div>
+      </header>
+      <div class="gradient_gradient__QVNR2 " style="top:0px"></div>
+      <div class="xai-container">
+            <section class="hero_hero__PJjhY">
+                  <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col order-last order-sm-first"><img
+                                    alt="A screenshot of the PromptIDE with a semi-transparent dark gradient overlaid."
+                                    loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
+                                    style="color:transparent"
+                                    srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprompt-ide-teaser.006875cd.webp&w=1080&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprompt-ide-teaser.006875cd.webp&w=2048&q=75 2x"
+                                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprompt-ide-teaser.006875cd.webp&w=2048&q=75" />
+                        </div>
+                        <div class="col hero_text__u2ygw order-first order-sm-last">
+                              <div class="hero_arrowContainer__nFI20 " style="justify-content:start"><a
+                                          style="rotate:-180deg" href="blog.html"><span class="xai-arrow">
+                                                <style data-emotion="css vubbuv">
+                                                      .css-vubbuv {
+                                                            -webkit-user-select: none;
+                                                            -moz-user-select: none;
+                                                            -ms-user-select: none;
+                                                            user-select: none;
+                                                            width: 1em;
+                                                            height: 1em;
+                                                            display: inline-block;
+                                                            fill: currentColor;
+                                                            -webkit-flex-shrink: 0;
+                                                            -ms-flex-negative: 0;
+                                                            flex-shrink: 0;
+                                                            -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                            font-size: 1.5rem;
+                                                      }
+                                                </style><svg
+                                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                                      focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                                      data-testid="ArrowForwardIcon">
+                                                      <path
+                                                            d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                                                      </path>
+                                                </svg>
+                                          </span></a></div>
+                              <div class="">
+                                    <p class="hero_timestamp__NLcXL">November 6, 2023</p>
+                                    <h1>Announcing PromptIDE</h1>
+                                    <p>An integrated development environment for prompt engineering and interpretability
+                                          research.</p>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+      </div>
+      <div class="pb-4 pt-4 content-box_wrapper___f519 content-box_transparent__mGBKd">
+            <div class="xai-container">
+                  <main class="content-box_prose__Xukvg">
+                        <div class="row">
+                              <div class="col-xxl-6 offset-xxl-3 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col">
+                                    <p><strong>The xAI PromptIDE is an integrated development environment for prompt
+                                                engineering and interpretability research.
+                                                It accelerates prompt engineering through an SDK that allows
+                                                implementing complex prompting techniques and rich analytics that
+                                                visualize the network&#x27;s outputs. We use it heavily in our
+                                                continuous development of <a href="/blog/grok">Grok™</a>.</strong></p>
+                                    <p>We developed the PromptIDE to give transparent access to Grok-1, the model that
+                                          powers <a href="/blog/grok">Grok™</a>, to
+                                          engineers and researchers in the community. The IDE is designed to empower
+                                          users and help them explore the capabilities
+                                          of our large language models (LLMs) at pace. At the heart of the IDE is a
+                                          Python code editor that - combined with a new
+                                          <a href="#/python-sdk/">SDK</a> - allows implementing complex prompting
+                                          techniques. While executing prompts in the IDE, users see
+                                          helpful analytics such as the precise tokenization, sampling probabilities,
+                                          alternative tokens, and aggregated attention masks.
+                                    </p>
+                                    <p>The IDE also offers quality of life features. It automatically saves all prompts
+                                          and has built-in versioning. The analytics
+                                          generated by running a prompt can be stored permanently allowing users to
+                                          compare the outputs of different prompting
+                                          techniques. Finally, users can upload small files such as CSV files and read
+                                          them using a single Python function from the SDK.
+                                          When combined with the SDK&#x27;s concurrency features, even somewhat large
+                                          files can be processed quickly.</p>
+                                    <p>We also hope to build a community around the PromptIDE. Any prompt can be shared
+                                          publicly at the click of a button. Users can
+                                          decide if they only want to share a single version of the prompt or the entire
+                                          tree. It&#x27;s also possible to include any stored
+                                          analytics when sharing a prompt.</p>
+                                    <p>The PromptIDE is available to members of our early <a href="#">access
+                                                program</a>. Below, you find a walkthrough of the
+                                          main features of the IDE.</p>
+                                    <p>Thank you,<br />
+                                          <!-- -->the xAI Team</p>
+                                    <h1 id="code-editor--sdk">Code editor & SDK</h1>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42.10a72153.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42.10a72153.png&w=3840&q=75" />
+                                    <p>At the heart of the PromptIDE is a code editor and a <a
+                                                href="#/python-sdk/">Python SDK</a>. The SDK provides a new programming
+                                          paradigm that
+                                          allows implementing complex prompting techniques elegantly. All Python
+                                          functions are executed in an implicit context,
+                                          which is a sequence of tokens. You can manually add tokens to the context
+                                          using the <code>prompt()</code> function or you can
+                                          use our models to generate tokens based on the context using the
+                                          <code>sample()</code> function.</p>
+                                    <p>Code is executed locally using an in-browser Python interpreter that runs in a
+                                          separate web worker.
+                                          Multiple web workers can run at the same time, which means you can execute
+                                          many prompts in parallel.</p>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42_completion.0b76ce65.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42_completion.0b76ce65.png&w=3840&q=75" />
+                                    <p>Complex prompting techniques can be implemented using multiple contexts within
+                                          the same program. If a function
+                                          is annotated with the <code>@prompt_fn</code> decorator, it is executed in its
+                                          own, fresh context. The function can perform
+                                          some operations independently of its parent context and pass the results back
+                                          to the caller using the <code>return</code>
+                                          statement. This programming paradigm enables recursive and iterative prompts
+                                          with arbitrarily nested sub-contexts.</p>
+                                    <h2 id="concurrency">Concurrency</h2>
+                                    <p>The SDK uses Python coroutines that enable processing multiple
+                                          <code>@prompt_fn</code>-annotated Python
+                                          functions concurrently. This can significantly speed up the time to completion
+                                          - especially when working with
+                                          CSV files.</p>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_concurrency.9f0bc6b5.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_concurrency.9f0bc6b5.png&w=3840&q=75" />
+                                    <h2 id="user-inputs">User inputs</h2>
+                                    <p>Prompts can be made interactive through the <code>user_input()</code> function,
+                                          which blocks execution until the user has
+                                          entered a string into a textbox in the UI. The <code>user_input()</code>
+                                          function returns the string entered by the user,
+                                          which cen then, for example, be added to the context via the
+                                          <code>prompt()</code> function. Using these APIs, a chatbot
+                                          can be implemented in just four lines of code:</p>
+                                    <pre><code class="language-python">await prompt(PREAMBLE)
+while text := await user_input(&quot;Write a message&quot;):
+    await prompt(f&quot;&lt;|separator|&gt;\n\nHuman: {text}&lt;|separator|&gt;\n\nAssistant:&quot;)
+    await sample(max_len=1024, stop_tokens=[&quot;&lt;|separator|&gt;&quot;], return_attention=True)
+</code></pre>
+                                    <h2 id="files">Files</h2>
+                                    <p>Developers can upload small files to the PromptIDE (up to 5 MiB per file. At most
+                                          50 MiB total) and use their
+                                          uploaded files in the prompt. The <code>read_file()</code> function returns
+                                          any uploaded file as a byte array. When combined
+                                          with the concurrency feature mentioned above, this can be used to implement
+                                          batch processing prompts to evaluate
+                                          a prompting technique on a variety of problems. The screenshot below shows a
+                                          prompt that calculates the MMLU
+                                          evaluation score.</p>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_mmlu2.b64f17de.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_mmlu2.b64f17de.png&w=3840&q=75" />
+                                    <h1 id="analytics">Analytics</h1>
+                                    <p>While executing a prompt, users see detailed per-token analytics to help them
+                                          better understand the model&#x27;s output.
+                                          The completion window shows the precise tokenization of the context alongside
+                                          the numeric identifiers of each token.
+                                          When clicking on a token, users also see the top-K tokens after applying top-P
+                                          thresholding and the aggregated attention
+                                          mask at the token.</p>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42_completion.0b76ce65.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42_completion.0b76ce65.png&w=3840&q=75" />
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42_token.188d0324.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_42_token.188d0324.png&w=3840&q=75" />
+                                    <p>When using the <code>user_input()</code> function, a textbox shows up in the
+                                          window while the prompt is running that users can enter
+                                          their response into. The below screenshot shows the result of executing the
+                                          chatbot code snippet listed above.</p>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_chat_completion.cd2e867b.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_chat_completion.cd2e867b.png&w=3840&q=75" />
+                                    <p>Finally, the context can also be rendered in markdown to improve legibility when
+                                          the token visualization features are
+                                          not required.</p>
+                                    <img alt="Sampling probabilities in the PromptIDE" loading="lazy" width="3600"
+                                          height="2250" decoding="async" data-nimg="1" class="img-fluid"
+                                          style="color:transparent"
+                                          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_completion_markdown.8e429932.png&w=3840&q=75 1x"
+                                          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fscreenshot_completion_markdown.8e429932.png&w=3840&q=75" />
+                              </div>
+                        </div>
+                  </main>
+            </div>
+      </div>
+      <footer>
+            <div class="xai-container">
+                  <div class="site-footer_footer___c5T3">
+                        <div class="col-sm-auto"><a href="#">Developers</a></div>
+                        <div class="col-sm-auto"><a href="#">PromptIDE</a></div>
+                        <div class="col-sm-auto"><a href="legal.html">Legal</a></div>
+                  </div>
+            </div>
+      </footer>
+</body>
+
+</html>
